@@ -1,0 +1,138 @@
+@media (min-width: 1200px) {
+    .MainContainer {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 100%;
+
+    }
+
+    .LeftContainer {
+        display: flex;
+        flex: 0 0 auto;
+        width: 20%;
+    }
+
+    .rightContainer {
+        display: flex;
+        flex: 0 0 auto;
+        width: 80%;
+    }
+
+    .logoContainer {
+        display: flex;
+        flex: 0 0 auto;
+    }
+
+    .logo {
+        margin: 1%;
+    }
+
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menuAccordionContainer {
+        display: flex;
+        width: 100%;
+    }
+
+    .logo-sub-container {
+        display: flex;
+        flex: 0 0 auto;
+    }
+
+    .men-btn-container {
+        display: flex;
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .MainContainer {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 100%;
+
+    }
+
+    .LeftContainer {
+        display: flex;
+        flex: 0 0 auto;
+        width: 0%;
+    }
+
+    .rightContainer {
+        display: flex;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .logoContainer {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: 2%;
+    }
+
+    .menuContainer {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h-mo-userMenu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .logo-sub-container {
+        display: flex;
+        flex: 0 0 auto;
+        width: 70%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .men-btn-container {
+        display: flex;
+        width: 30%;
+        flex: 0 0 auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-end;
+    }
+    .menu-Icon{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+}

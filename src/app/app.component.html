@@ -1,0 +1,46 @@
+<section class="logoContainer">
+    <section class="logo-sub-container">
+        <img src="/AlianzaLogo.png" class="logo">
+    </section>
+    <section class="men-btn-container">
+        @if(isSmallDevice)
+        {
+        <mat-sidenav #userMenu mode="side" position="end" fixedInViewport="true">
+            <section style="  min-height: 70vh; height: auto;margin: 0;">
+                <section class="h-mo-userMenu">
+                    <button mat-button (click)="userMenu.toggle()">
+                        <p>Cerrar</p>
+                    </button>
+                </section>
+                <section style="display: flex;height: 80vh;">
+                    <app-menu (navToggle)="userMenu.toggle()"></app-menu>
+                </section>
+            </section>
+
+        </mat-sidenav>
+        <section class="h-container-user-name">
+            <button class="h-user-menu-btn" mat-button (click)="userMenu.toggle()"><mat-icon
+                    class="menu-Icon">apps</mat-icon></button>
+        </section>
+        }
+    </section>
+</section>
+<section class="MainContainer">
+    @if(!isSmallDevice)
+    {
+    <section class="LeftContainer">
+        <section class="menuContainer">
+            <section class="menuAccordionContainer">
+                <app-menu></app-menu>
+            </section>
+        </section>
+    </section>
+    }
+    <section class="rightContainer">
+        <mat-sidenav-container style="width: 100%;">
+            <mat-sidenav-content style="width: 100%;">
+                <router-outlet />
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+    </section>
+</section>

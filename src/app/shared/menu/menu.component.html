@@ -1,0 +1,22 @@
+<mat-accordion class="accordion">
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title><mat-icon class="m-user-menu-icon">perm_identity</mat-icon>
+                Clients</mat-panel-title>
+        </mat-expansion-panel-header>
+        <section class="accordion-inside">
+            <button mat-button [routerLink]="['/clients/clientManager']" (click)="close()">
+                <span>Clients</span>
+            </button>
+            <button mat-button>
+                <span>Client look history</span>
+            </button>
+            <button mat-button>
+                <span>Emergency pin configuration</span>
+            </button>
+            <button mat-button>
+                <span>Emergency pin history</span>
+            </button>
+        </section>
+    </mat-expansion-panel>
+</mat-accordion>

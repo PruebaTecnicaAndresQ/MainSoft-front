@@ -1,0 +1,79 @@
+
+.accordion{
+    width: 100%;
+}
+
+.accordion-inside{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.m-user-menu-btn
+{
+    color: black !important;  
+}
+.m-user-menu-icon{
+    color: var(--mdc-text-button-label-text-color, var(--mat-app-primary));
+}
+
+@media (max-width: 767px) {
+    .menuContainer {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .h-mo-userMenu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;    
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menuContainer {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .menuContainer {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    .menuAccordionContainer{
+        display: flex;
+        width: 100%;
+    }
+}
