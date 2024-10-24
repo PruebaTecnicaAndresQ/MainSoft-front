@@ -7,7 +7,7 @@ import moment from 'moment';
 import { firstValueFrom } from 'rxjs';
 import { NewClientModalComponent } from './new-client-modal/new-client-modal.component';
 import { MatDialog } from '@angular/material/dialog';
-
+import { saveAs } from 'file-saver';
 @Component({
   selector: 'app-client-manager',
   templateUrl: './client-manager.component.html',
@@ -132,4 +132,15 @@ export class ClientManagerComponent {
       this.getAll();
     });
   }
+  downloadFile() {
+    let data = this.dataSource;
+    const replacer = (key: any, value: null) => value === null ? '' : value; // specify how you want to handle null values here
+    const header = Object.keys(data[0]);
+    let csv = data.map((row: { [x: string]: any; }) => header.map(fieldName => JSON.stringify(row[fieldName], replacer)).join(','));
+    csv.unshift(header.join(','));
+    let csvArray = csv.join('\r\n');
+
+    var blob = new Blob([csvArray], {type: 'text/csv' })
+    saveAs(blob, "myFile.csv");
+}
 }
